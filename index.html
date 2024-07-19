@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#config errmsg="[Lain is angry.]"-->
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- InstanceBegin template="/Templates/mpi-inf-hp.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+        <!--#config timefmt="%A, %d %B %Y - %R" -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- CORRECT HERE: This is REALLY needed all search engines and bookmark manager love this; please use this format: -->
+        <title>Homepage: Philip Wellnitz (Max Planck Institute for Informatics)</title>
+
+        <link rel="SHORTCUT ICON" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/c/mpi-inf.css" />
+        <link rel="stylesheet" type="text/css" media="print" href="/c/print.css" />
+        <link rel="stylesheet" href="publist.css" type="text/css">
+        <link rel="stylesheet" href="custom.css" type="text/css">
+
+	<script src="./interpreter.min.js"></script>
+	<script type="text/javascript">
+	let fs = Interpreter.getFirstState();
+	function runSOSML() {
+		try {
+			let res = Interpreter.interpret(document.getElementById("sosml").value + ';', fs);
+			if (res.evaluationErrored) {
+				document.getElementById("output").value = 'Uncaught SML Error: ' + res.error.toString();
+			} else {
+				document.getElementById("output").value = res.state.toString({stopId: fs.id + 1});
+			}
+		} catch ( e ) {
+			document.getElementById("output").value = e.toString();
+		}
+	}
+	</script>
+	<style type="text/css" media="screen">
+a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
+	</style>
+	<!-- put your personal styles here -->
+	<meta name="google-site-verification" content="oGRzXWH7aross89Zmu2c_XABDS0knPmKK0qFqaTpGIc" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="head1o2">
+            <div id="mpiidotspacer"></div>
+            <div id="mpiidot"></div>
+
+            <ul id="nav1">
+                <!-- CORRECT HERE: Your department number and the full name -->
+                <li><a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/" title="Department 1: Algorithms and Complexity">Department 1: Algorithms and Complexity</a></li>
+            </ul>
+        </div>
+        <div id="head2o2">
+            <div id="mpiitext">max planck institut<br/>
+                informatik</div>
+            <img id="mpiilogo" src="/g/mpii.jpg" alt="mpii" usemap="#Map" width="300" height="100"/>
+            <map name="Map" id="Map">
+                <area shape="rect" coords="97,14,296,70" href="https://www.mpi-inf.mpg.de" alt="mpii logo" />
+                    <area shape="circle" coords="41,49,40" href="https://www.mpg.de/" alt="Minerva of the Max Planck Society" />
+            </map>
+        </div>
+        <div id="headerspacer"></div>
+        <div id="col2o2">
+            <div id="col2o2content">
+		<h1 style="padding-left: .5em;
+		padding-bottom: .25em;
+		        font-size: 18px;">Philip Wellnitz<a href="https://orcid.org/0000-0002-6482-8478" target="orcid.widget"><span class="mini-orcid-icon-16" style="
+			    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABnElEQVQ4y52UvUtCURjGf968lmQhFGXYEH3QUg0JhkPR4l5T0IUosMGxv6C1KdpahCZbGxscGiXBloIKo0ESEYpEM71+3NvgvXW0j3vp2c57zvPjPQ/nPWCheDrkiKdDDqtzjl/MQSAChAG/Uc4BCSCmBJKpP0HxdGgQOAY2LRo4BaJKIFn6BjIgCSDolPrQ9Caa3vwLlgLCJkwSNo6BIEBoYp8537ZVLEHD89WRkcmlWex3+WhqNeqtMrLk/nTWWxVA7wYuKYFkymksIuLO/FiEYjXDazXD6tQhJTWLLLmRezxkns+4zsfQdQ3B+wkK/9Z/Sc1yfrsFgFseYnnyAE1vcJM/QfSaGfmxoWrjhaunI2aG18WyvztsW6rUC/Q6vd/qJihnFzTuXeG5ciOWcgBmRglg9yejLLkZHVhEcrgY8SwwPbzGxcOeeCQhgmIi6LV6z5uaR20WKdYemR3ZQNMalNUs53c7vNcLIigGnS87jvVodOtUCSSV7rCjtJ+9XaUMT0fYGDMTpj2Qlp0gzFnH1UT95xuxlN2P7QOpwZChGlWkWQAAAABJRU5ErkJggg==) no-repeat;
+			    width: 18px;
+			    height: 18px;
+			    display: inline-block;
+			    margin: -2px 0 -2px 2px;
+			    "></span></a></h1>
+
+                <p text align="justify"> 
+		I was a post-doctoral researcher at the Max Planck Institute for Informatics until March 31, 2024. This is my old page. Check my ORCID page or my 
+		<a href="https://github.com/ph111p/">GitHub profile</a>
+		for more up-to-date information. 
+		</p>
+
+		<h2>Research Interests</h2>
+		<ul>
+			<li> Obtaining (provably) best-possible algorithms by designing faster algorithms and matching (conditional) lower bounds</li>
+			<li> <i>(Approximate) String Matching</i> and in general algorithms on strings</li>
+			<li> <i>Counting Problems</i>, also in parameterized settings (especially problems related to graph homomorphisms)</li>
+		</ul>
+
+		<p>
+		I am happy to collaborate on any level. 
+		<!--In particular, if you happen to be interested in doing an internship or thesis with me, feel free to contact me with informal inquiries; you may want to mention one of my papers (see below) that you read and liked (so that I get an idea about the kind of problems you would like to work on). Note that any internship applications will still have to go through the general internship program that can be found <a href="https://www.cis.mpg.de/internships/">here</a>; also note that there are no spots left for Summer 2023 anymore.-->
+		</p>
+
+                <hr class="clearpara"/>
+                <h2><a name="publications">Selected Publications</a></h2>
+                <hr />
+
+		<p> The following lists contain only selected publications. Consult <a href="https://dblp.uni-trier.de/pid/204/1616.html">dblp</a> for a more complete list of publications.</p>
+
+		<h2>Approximate String Matching</h2>
+                <table id="references" cellpadding="6">
+                    <tbody>
+                        <tr class="ref">
+                            <td class="data">
+				    <p class="title"><b><a>"Optimal Algorithms for Bounded Weighted Edit Distance"</a></b> <a href="https://arxiv.org/abs/2305.06659">[arXiv]</a>
+				    <a href="https://people.mpi-inf.mpg.de/~wellnitz/slides/focs23.pdf">[slides]</a></p>
+				    <p class="authors">with <a href="https://csssaz.github.io/">Alejandro Cassis</a> and <a href="https://www.mimuw.edu.pl/~kociumaka/">Tomasz Kociumaka</a></p>
+				    <p class="summary">We give an \tilde{O}(n + n^0.5 k^1.5) algorithm for computing the weighted edit distance k between two strings.
+				    We prove that our algorithm is optimal for n^0.5 ≤ k ≤ n under the APSP hypothesis.
+				    <!--<i>FOCS'23</i>--></p>
+                            </td>
+                        </tr>
+                        <tr class="ref">
+                            <td class="data">
+				    <p class="title"><b><a href="https://ieeexplore.ieee.org/document/9996673">"Faster Pattern Matching under Edit Distance"</a></b> <a href="https://arxiv.org/abs/2204.03087">[arXiv]</a> </p>
+				    <p class="authors">with <a href="https://nms.kcl.ac.uk/panagiotis.charalampopoulos/">Panagiotis Charalampopoulos</a> and <a href="https://www.mimuw.edu.pl/~kociumaka/">Tomasz Kociumaka</a></p>
+				    <p class="summary">We give an O(n + n/m k^3.5) algorithm for PM with edits.
+				    This is the first improvement of   
+				    Cole and Hariharan's [CH'02] O(n + n/m k^4) algorithm for the problem.
+				    <!--<i>FOCS'22</i>--></p>
+                            </td>
+                        </tr>
+			<!--
+                        <tr class="ref">
+                            <td class="data">
+				    <p class="title"><b><a href="https://www.computer.org/csdl/proceedings-article/focs/2020/962100a978/1qyxzwzatXy">"Faster Approximate Pattern Matching: A Unified Approach"</a></b> <a href="https://arxiv.org/abs/2004.08350">[arXiv]</a> <a href="https://www.youtube.com/watch?v=yTM0LqlH8gY&feature=youtu.be">[video]</a></p>
+				    <p class="authors">with <a href="https://nms.kcl.ac.uk/panagiotis.charalampopoulos/">Panagiotis Charalampopoulos</a> and <a href="https://www.mimuw.edu.pl/~kociumaka/">Tomasz Kociumaka</a></p>
+				    <p class="summary">We tighten the
+				    structural insight from [BKW, SODA'19] and
+				    show a similar result for pattern matching
+				    with edits: either there are very few occurrences of a pattern in a text, or both text and pattern are close to a common highly periodic string. 
+				    Using the structural insight,
+				    we obtain faster algorithms for PM with
+				    mismatches and edits for the
+				    fully-compressed and other settings.
+                            </td>
+                        </tr>
+ 			-->
+                    </tbody>
+                </table>
+
+		<h2>Counting (Small) Patterns in Graphs</h2>
+                <table id="references" cellpadding="6">
+                    <tbody>
+                        <tr class="ref">
+                            <td class="data">
+				    <p class="title"><b>"Counting Small Induced Subgraphs with Edge-monotone Properties"</b> <a href="https://arxiv.org/abs/2311.08988">[arXiv]</a>
+				<p class="authors">with Simon Döring and Dániel Marx</p>
+				<p class="summary">We show that for any
+				(non-trivial) edge-monotone graph property Φ,
+				counting all induced subgraphs of a graph that
+				satisy Φ is #W[1]-hard. Further, for most natural edge-monotone properties, no significant improvement upon the brute-force algorithms is possible (unless ETH fails).
+				</p>
+			    </td>
+                        </tr>
+
+                        <tr class="ref">
+                            <td class="data">
+				    <p class="title"><b><a href="https://doi.org/10.1137/1.9781611975994.133">"Counting and Finding Homomorphisms is Universal for Parameterized Complexity Theory"</a></b> <a href="https://arxiv.org/abs/1907.03850">[arXiv]</a>
+				    <a href="https://people.mpi-inf.mpg.de/~wellnitz/slides/soda20.pdf">[slides]</a></p>
+                                <p class="authors">with <a href="https://www.roth-marc.com/">Marc Roth</a></p>
+ 				<p class="summary">We show that any problem P in #W[1] (or W[1]) is
+				equivalent to the problem of counting homomorphisms between graphs
+				of graph classes H(P) and G(P).
+				<!--<i>SODA'20</i>--></p>
+                            </td>
+                        </tr>
+                   </tbody>
+		</table>
+
+                <hr class="clearpara"/>
+                <h2><a name="code">Code</a></h2>
+                <hr />
+
+                <ul>
+                    <li><a href="https://github.com/PH111P/tikz-kneser">tikz-kneser</a>: A tikz-library for drawing Kneser graphs.</a>
+		    </li>
+                    <li><a href="https://github.com/SOSML/SOSML">SOSML</a>: An interpreter for SML running in your browser, check it out at <a href="https://sosml.org">sosml.org</a>.
+			    Alternatively, write your SML code in the text box below and click “interpret”.<br/>
+			    Written at Saarland University together with Julian Baldus, Julian Dörfler, Jesko Dujmovic, Marvin Hofmann and Dominik Luche<br/><br/>
+			    <textarea id="sosml" rows="4" cols="50">val x = "Hello" ^ " ";
+x ^ "World!";</textarea>
+			    <textarea id="output" rows="4" cols="50" readonly="true"></textarea>
+			    <br/>
+			    <button type="button" onclick="runSOSML()"> Interpret </button>
+                        </br>
+                        </br>
+                    </li>
+                    <li>Code of other projects is available on my <a href="https://github.com/ph111p/">GitHub profile</a></li>
+                </ul>
+
+
+                <hr class="clearpara"/>
+                <h2><a name="teaching">Recent Teaching</a></h2>
+                <hr />
+
+                <ul>
+                    <li>Winter 2023/24<br/>
+                        <b>Lecturer</b>: <a href="https://cms.sic.saarland/algodat23/">Algorithms and Data Structures</a> (with Karl Bringmann and Evangelos Kipouridis)
+			    <br/>
+			    <br/>
+
+                    <li>Summer 2023<br/>
+                        <b>Lecturer</b>: <a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/teaching/summer23/counting">Techniques for Counting Problems</a> (with Jacob Focke)
+			    <br/>
+			    <br/>
+
+ 
+                    <li>Winter 2022/23<br/>
+                        <b>Lecturer</b>: <a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/teaching/winter22/random">Randomized Algorithms and Probabilistic Analysis of Algorithms</a>
+                            <br/>
+			    <br/>
+                    
+		    <!-- <li>Winter 2021/22<br/>
+                        <b>Co-organizer</b>: <a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/teaching/winter21/reading-group">Reading Group Algorithms: Continuous Methods for Combinatorial Problems</a> (with Kurt Mehlhorn, Roohani Sharma, and Hans Simon)
+			    <br/>
+                    </li>
+                    <li>Winter 2020/21<br/>
+                        <b>Assistant</b> (<a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/teaching/winter20/property-testing">Property Testing</a>)
+                            <br/>
+                    </li>
+    			<li>Summer 2020<br/>
+                        <b>Assistant</b> (<a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/teaching/summer20/parameterized-algorithms/">Parameterized Algorithms</a>)
+                            <br/>
+			</li> -->
+                </ul>
+
+                <hr class="clearpara"/>
+                <h2><a name="education">Short CV</a></h2>
+                <hr />
+                <!-- put the most recent entries on top of your list -->
+                <ul>
+                    <li> October 2021 - March 2024:<br />
+                        Postdoctoral scholar at the <a href="https://www.mpi-inf.mpg.de">Max Planck Institute for Informatics</a><br />
+                        <br />
+                    </li>
+                    <li> October 2018 - December 2021:<br />
+                        PhD student in <a href="https://saarland-informatics-campus.de/">Computer Science</a> at <a href="https://www.uni-saarland.de">Saarland
+                            University, Saarbrücken</a>, Germany and the <a href="https://www.mpi-inf.mpg.de">Max Planck Institute for Informatics</a><br />
+                    </li>
+                    <li> April 2017 - December 2021:<br />
+                        Member of the <a href="https://www.graduateschool-computerscience.de/">Saarbrücken Graduate School of Computer Science</a>
+                        <br />
+                    </li>
+		    <li><!-- October 2015 - April 2017:<br />-->
+                        B.Sc. in Computer Science at <a href="https://saarland-informatics-campus.de/">Saarland University</a>, Saarbrücken, Germany<br />
+                    <li><!--July 2015<br />-->
+                            Abitur at <a href="https://www.hhgym.de/">Heinrich-Hertz-Gymnasium</a>, Berlin, Germany</li>
+
+                </ul>
+                <div id="footer">Copyright R6 by <a href="https://www.mpi-inf.mpg.de/" title="Home Page of the Max-Planck-Institute Informatik">Max-Planck-Institut&nbsp;Informatik</a> | <a href="https://imprint.mpi-klsb.mpg.de/inf/people/wellnitz">Imprint / Impressum</a> | <a href="https://data-protection.mpi-klsb.mpg.de/inf/people/wellnitz">Data Protection / Datenschutzhinweis</a> <br />
+                    page last modified
+                    <!--#echo var="LAST_MODIFIED" -->
+                </div>
+            </div>
+        </div>
+        <div id="col1o2">
+            <div id="col1o2content">
+                <!-- CORRECT HERE: see the file menu.inc for all menu items -->
+                <!-- the highlighting of selected menu items is done using the style-tag. See the top of this file -->
+                <!--#include virtual="menu.inc" -->
+                <br/>
+            </div>
+        </div>
+    </body>
+
+</html>
+

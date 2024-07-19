@@ -1,0 +1,115 @@
+#references { margin-left:1.5em; }
+
+#references tr.ref td.num { vertical-align:top; }
+#references tr.ref td.data a.pub { font-weight:bold; }
+#references tr.ref td.data p.title { padding:0 0 0; margin:0 0 0 0;}
+#references tr.ref td.data p.authors { margin:0 0 0 0; }
+#references tr.ref td.data p.conf {  }
+#references tr.ref td.data p.note {  }
+#references tr.ref td.data p { line-height:1.0; padding:0.2em 0em 0em; }
+
+
+.mybib-box {
+	display: inline;
+	padding: 0px;
+	margin-top: 0em;
+	margin-bottom: 0.3em;
+	width: auto;
+	font-size: 10px;
+}
+
+.mybib-box a:hover {
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.mybib-box li {
+	display: inline;
+	padding-left: 1ex;
+	padding-right: 1ex;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-right: 0.5ex;
+	margin-top: 1px;
+	width: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bbbbbb;
+	background-color: #f2f5fc;
+}
+
+.mybib-box p {
+	display: inline;	
+}
+
+/* Space above list */
+.mybib {
+	margin-top: 0em;
+	margin-bottom: 2em;
+}
+
+/* spacing between list elements */
+.mybib li {
+	margin-bottom: 1.5em;
+}
+
+
+/*--- abstract ---*/
+
+.oldabstract {
+	background-color: #f2f5fc;
+	padding-bottom: 0;
+	border: 1px #cce solid;
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.oldabstract p {
+	padding: 0 1em;
+}
+
+.summary {
+	padding-bottom: 0;
+/*	margin-top: 1em;
+    margin-bottom: 1em;
+	font-size: 12px; */
+	text-align: justify;
+	line-height: normal;
+	font-size: 11.5px;
+	color: #332299;
+	text-align: justify;
+	margin-left: +.5%;
+	margin-right: +5%;
+	margin-top: .3ex;
+}
+
+.summary p {
+	padding: 0 1em;
+	margin-bottom: 0em;
+	padding: 0;
+	margin: 0ex;
+	line-height: normal;
+}
+
+
+.unused-abstract {
+	display: none;
+	margin-left: +2%;
+	margin-right: +2%;
+	margin-bottom: 0.3em;
+	font-size: 11.5px;
+	color: #332299;
+	list-style-image: none;
+	list-style-type: none;
+	text-align: justify;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color:#AABBE0;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: normal;
+}
+
