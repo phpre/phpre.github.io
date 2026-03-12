@@ -26,7 +26,62 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
                 <h3>Past Talks (2024)</h3>
                 <a href="index.html">Top</a>
                 <a href="2025.html">2025</a>
+
+                <h4>Yuwei Liu: On Average Baby PIH and Its Applications</h4>
+                <p>Friday, 2024-12-13, 12:00</p>
+                <p>
+                The Parameterized Inapproximability Hypothesis (PIH) asserts that no FPT algorithm can decide whether a given 2CSP instance parameterized by the number of variables is satisfiable, or at most a constant fraction of constraints can be satisfied simultaneously. In a recent breakthrough, Guruswami, Lin, Ren, Sun and Wu (STOC 2024) proved the PIH under the Exponential Time Hypothesis (ETH). But it still remains a major open problem whether the PIH can be established assuming only W[1]= FPT. Guruswami, Ren and Sandeep (CCC 2024) showed a weaker version of the PIH called the Baby PIH under W[1]= FPT. They also proposed an intermediate hypothesis called the Average Baby PIH that might lead to further progress towards proving the PIH.
+                <br/>
+                Given a 2CSP instance where the number of its variables is the parameter, the Average Baby PIH states that no FPT algorithm can decide whether it is satisfiable or any multi-assignment that satisfies all constraints must assign each variable at least r values on average, for any fixed constant r >1. We prove the W[1]-hardness of this problem by giving an FPT-time self-reduction for 2CSP that turns a gap for multi-assignment in one variable into a gap for multi-assignment on average, thus proving the implication from the Baby PIH to the Average Baby PIH. Since the Baby PIH holds under W[1]= FPT, so does the Average Baby PIH.
+                <br/>
+                As an application, we obtain for the first time the W[1]-hardness of constant approximating k-ExactCover.
+                <br/>
+                Joint work with Yijia Chen, Shuangle Li, Bingkai Lin and Xin Zheng.
                 </p>
+
+                <h4>Lucas Picasarri-Arrieta (NII): Blow-ups and extensions of trees in tournaments</h4>
+                <p>Friday, 2024-11-29, 12:00</p>
+                <p>
+                In this talk, after recalling some classical results on Ramsey Theory, we will present a notion of Ramsey Number $R(H)$ for acyclic digraphs $H$; this idea follows a seminal work by Erdős and Moser in 1964.
+                <br/>
+                In general, $R(H)$ can be exponential in the order of $H$. We will focus on necessary and sufficient conditions for a class of acyclic digraphs $D$ to be linearly unavoidable, meaning that, for some constant $c$,  every $H \in D$ satisfies $R(H) \leq c n$, where $n$ is the order of $H$. In particular, we show that blow-ups and extensions of oriented trees are both linearly unavoidable.
+                <br/>
+                This is joint work with Pierre Aboulker, Frédéric Havet, William Lochet, Raul Lopes, and Clément Rambaud.
+                <br/>
+                <a href="https://arxiv.org/abs/2410.23566">arXiv link</a>
+                </p>
+
+                <h4>Liana Khazaliya: Crossing Number is NP-hard for Constant Path-width (and Tree-width)</h4>
+                <p>Friday, 2024-11-08, 12:00</p>
+                <p>
+                The crossing number is the smallest number of crossings that a graph can have when drawn in the plane.
+                The problem (Crossing Number) of determining such a number is a celebrated question in graph drawing.
+                It has been known to be NP-complete since the 1980s, and fairly involved techniques were already required to solve it efficiently for instances with a bounded vertex cover.
+                In the paper, we prove that computing exactly the crossing number is still NP-hard for graphs of path-width 12 (and as a result, even of tree-width 9).
+                Thus, while both parameters (tree- and path-width) have been very successful tools in many graph algorithm scenarios, our result shows that general crossing number computations unlikely (under P!=NP) could be successfully tackled using bounded width of graph decompositions, which has been a 'tantalizing open problem' [S. Cabello, Hardness of Approximation for Crossing Number, 2013] till now.
+                <br/>
+                Joint work with Petr Hliněný.
+                <br/>
+                arXiv: 2406.18933
+                </p>
+
+                <h4>Mingquan Ye: High-Accuracy Multicommodity Flows via Iterative Refinement</h4>
+                <p>Friday, 2024-10-18, 12:00</p>
+                <p>
+                The multicommodity flow problem is a classic problem in network flow andcombinatorial optimization. Existing algorithms often focus on low-accuracyapproximate solutions, while high-accuracy algorithms typically rely ongeneral linear program solvers. In this work, we present efficienthigh-accuracy algorithms for a broad family of multicommodity flow problemson undirected graphs, demonstrating improved running times compared togeneral linear program solvers. Our main result shows that we can solve the$\ell_{q, p}$-norm multicommodity flow problem to a $(1 + \varepsilon)$approximation in time $O_{q, p}(m^{1+o(1)} k^2 \log(1 / \varepsilon))$,where $k$ is the number of commodities, and $O_{q, p}(\cdot)$ hidesconstants depending only on $q$ or $p$. As $q$ and $p$ approach to $1$ and$\infty$ respectively, $\ell_{q, p}$-norm flow tends to maximum concurrentflow.We introduce the first iterative refinement framework for $\ell_{q,p}$-norm minimization problems, which reduces the problem to solving aseries of decomposable residual problems. In the case of $k$-commodityflow, each residual problem can be decomposed into $k$ single commodityconvex flow problems, each of which can be solved in almost-linear time. Asmany classical variants of multicommodity flows were shown to be completefor linear programs in the high-accuracy regime [Ding-Kyng-Zhang,ICALP'22], our result provides new directions for studying more efficienthigh-accuracy multicommodity flow algorithms.
+                </p>
+
+                <h4>Augusto Modanese: No distributed quantum advantage for approximate graph coloring</h4>
+                <p>Friday, 2024-10-11, 12:00</p>
+                <p>
+                We give an almost complete characterization of the hardness of c-coloring χ-chromatic graphs with distributed algorithms, for a wide range of models of distributed computing. In particular, we show that these problems do not admit any distributed quantum advantage. To do that: 1) We give a new distributed algorithm that finds a c-coloring in χ-chromatic graphs in O~(n^(1/α)) rounds, with α=⌊(c−1)/(χ−1)⌋. 2) We prove that any distributed algorithm for this problem requires Ω(n^(1/α)) rounds.
+                <br/>
+                Our upper bound holds in the classical, deterministic LOCAL model, while the near-matching lower bound holds in the non-signaling model. This model, introduced by Arfaoui and Fraigniaud in 2014, captures all models of distributed graph algorithms that obey physical causality; this includes not only classical deterministic LOCAL and randomized LOCAL but also quantum-LOCAL, even with a pre-shared quantum state.
+                We also show that similar arguments can be used to prove that, e.g., 3-coloring 2-dimensional grids or c-coloring trees remain hard problems even for the non-signaling model, and in particular do not admit any quantum advantage. Our lower-bound arguments are purely graph-theoretic at heart; no background on quantum information theory is needed to establish the proofs.
+                <br/>
+                Joint work with Xavier Coiteux-Roy, Francesco d’Amore, Rishikesh Gajjala, Fabian Kuhn, François Le Gall, Henrik Lievonen, Marc-Olivier Renou, Gustav Schmid, and Jukka Suomela. Full version on <a href="https://arxiv.org/abs/2307.09444">arXiv</a>.
+                </p>
+
 
             </div>
         </div>
