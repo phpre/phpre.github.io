@@ -169,8 +169,91 @@ This is joint work with Ken-ichi Kawarabayashi, Nicola Lorenz and Jacob Stegeman
             This is joint work with Rutger Campbell, J. Pascal Gollin, O-joung Kwon, Rose McCarty, Sang-il Oum, and Sebastian Wiederrecht.
             </p>
 
+            <h4>Quanquan Liu: The Predicted-Updates Dynamic Model</h4>
+            <p>Friday, 2025-06-13, 11:30</p>
+            <p>
+            The main bottleneck in designing efficient dynamic algorithms is the unknown nature of the update sequence. In particular, there are some problems, like triconnectivity, planar digraph all pairs shortest paths, k-edge connectivity, and others, where the separation in runtime between the best offline or partially dynamic solutions and the best fully dynamic solutions is polynomial, sometimes even exponential.
+            <br/>
+            In this talk, we introduce the predicted-updates dynamic model, one of the first beyond-worst-case models for dynamic algorithms, which generalizes a large set of well-studied dynamic models including the offline dynamic, incremental, and decremental models to the fully dynamic setting when given predictions about the update times of the elements. In the most basic form of our model, we receive a set of predicted update times for all of the updates that occur over the event horizon. We give a novel framework that “lifts” offline divide-and-conquer algorithms into the fully dynamic setting with little overhead. Using this, we are able to interpolate between the offline and fully dynamic settings; when the $\ell_1$ error of the prediction is linear in the number of updates, we achieve the offline runtime of the algorithm (up to poly log n factors).
+            <br/>
+            Joint work with Vaidehi Srinivas, appeared in COLT 2024.
+            </p>
 
+            <h4>Amadeus Reinald: Plane strong connectivity augmentation</h4>
+            <p>Friday, 2025-06-06, 12:00</p>
+            <p>
+            Given a network of non-crossing roads between cities, where not all of them are reachable from one-another, how to build a minimal number of roads such making all cities interconnected?
+            Formally, we consider the problem asking to augment a plane oriented graph by adding a minimal number of arcs, to obtain a strongly connected oriented graph which is still planar.
+            In this talk, we show that, unlike unrestricted versions of the problem, Plane Strong Connectivity Augmentation is NP-complete.
+            On the positive side, we obtain an efficient FPT (parameterized) algorithm, running in polynomial-time when the number of arc additions is bounded.
+            <br/>
+            This is joint work with Stéphane Bessy, Daniel Gonçalves and Dimitrios Thilikos.
+            </p>
 
+            <h4>Kazuki Watanabe (NII): Multi-objective Optimization Meets Model Checking</h4>
+            <p>Friday, 2025-05-30, 12:00</p>
+            <p>
+            Model checking provides a rigorous framework for certifying software correctness by generating formal proofs or counterexamples.
+            In this talk, we present recent progress in compositional model checking, a methodology that leverages the modular structure of software to improve scalability and tractability.
+            Intriguingly, we uncover a deep and fruitful connection between compositional model checking and multi-objective optimization.
+            This connection leads to a novel, quantitative caching technique that enhances the efficiency of compositional reasoning.
+            We illustrate the effectiveness of this quantitative cache through its application to compositional probabilistic model checking of Markov decision processes.
+            Finally, we outline several promising directions for future research at the intersection of formal verification and continuous optimization.
+            </p>
+
+            <h4>Orane Belhomme: An extension of CTL for synchronization problems</h4>
+            <p>Friday, 2025-05-23, 12:00</p>
+            <p>
+            In the community of model checking, Computation Tree Logic (CTL) is a very useful tool used to describe the properties of a system over time.
+            It allows researchers to construct models in which they can effectively study behaviours and patterns.
+            <br/>
+            Around 2020, my internship supervisor (Nicolas Markey) began to think about an extension of CTL that would allow for an easier description of synchronization phenomena.
+            In model checking, this could be useful when one wants to speak about a system in which a property will have the same truth value after a given number of steps, no matter what the execution is.
+            The basis of my internship was precisely to design these new operators for CTL, and then to study their characteristics.
+            This is what I will talk about after a quick introduction to temporal logics in model checking.
+            </p>
+
+            <h4>Max Dupre la Tour: Characterizing and Recognizing Leaf Powers</h4>
+            <p>Friday, 2025-05-16, 12:00</p>
+            <p>
+            Leaf powers were introduced 20 years ago by Nishimura, Ragde, and Thilikos as a simplified model for phylogenetic tree reconstruction.
+            <br/>
+            A graph G is a *k*-leaf power if there exists a tree T whose leaves are the vertices of G, with the property that a pair of leaves u and v induce an edge in G if and only if they are at most distance *k* apart in T.
+            <br/>
+            I will present some results on how to characterize and recognize such graphs.
+            </p>
+
+            <h4>Samuel Coulomb: Directed Clique Number and the Gyárfás-Sumner Conjecture for Tournaments.</h4>
+            <p>Friday, 2025-05-09, 12:00</p>
+            <p>
+            The chromatic number and the clique number are fundamental parameters in graph theory, with the clique number serving as a natural lower bound for the chromatic number.
+            However, graphs with bounded clique number can have arbitrarily large chromatic number.
+            The study of when the chromatic number is bounded by a function of the clique number is known as chi-boundedness.
+            A central question in this area is the Gyárfás-Sumner conjecture: which induced subgraph must appear in any graph with bounded clique number and sufficiently large chromatic number?
+            <br/>
+            In the directed graph setting, the dichromatic number is widely accepted as the generalization of the chromatic number, but defining an analog to the clique number is non-trivial.
+            A novel definition has recently been introduced and, while less intuitive, exhibits better properties compared to previous attempts.
+            We discuss its interest and explore the Gyárfás-Sumner conjecture within this new framework.
+            </p>
+
+            <h4>Zhiye Xie: No Time to Hash: On Super Efficient Entropy Accumulation</h4>
+            <p>Friday, 2025-04-18, 12:00</p>
+            <p>
+            Real-world random number generators cannot afford to use cryptographic hashing every time they refresh their state with a new entropic input.
+            Instead, they use “superefficient” simple entropy-accumulation procedures like bitwise rotation and XOR with new entropy.
+            For instance, Microsoft’s RNG uses bitwise rotations with amount 5 (for 32-bit CPU) and 19 (for 64-bit CPU).
+            But where do these rotation amounts come from? Are they optimal? Should we replace rotation with a better permutation?
+            <br/>
+            In this take, we present a formal study of these questions by modeling entropy inputs as independent samples from a natural family of distributions, which we call 2-monotone distributions (including Gaussian, exponential, etc.).
+            Our main contributions:
+            <ul>
+                <li>We prove that for any bitwise rotation with coprime amount α, entropy accumulates at an optimal Ω(n) rate over n steps.</li>
+                <li>However, some rotation values are better than others. For instance, α=19 is near-optimal for 64-bit CPU, while α=7 generally outperforms α=5 for 32-bit CPU.</li>
+                <li>More generally, we analyze arbitrary bit permutations π, and introduce a parameter—called covering number —which characterizes how quickly entropy accumulates for inputs with min-entropy k.</li>
+                <li>Finally, we construct a simple permutation that achieves near-optimal performance across all k, and we validate its advantage over standard rotations in experiments.</li>
+            </ul>
+            The talk is based on the paper appeared in CRYPTO 2021.
+            </p>
             </div>
         </div>
     </body>
