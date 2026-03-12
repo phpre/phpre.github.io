@@ -82,6 +82,82 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
                 Joint work with Xavier Coiteux-Roy, Francesco d’Amore, Rishikesh Gajjala, Fabian Kuhn, François Le Gall, Henrik Lievonen, Marc-Olivier Renou, Gustav Schmid, and Jukka Suomela. Full version on <a href="https://arxiv.org/abs/2307.09444">arXiv</a>.
                 </p>
 
+                <h4>Ryo Kuroiwa (NII): Domain-Independent Dynamic Programming</h4>
+                <p>Friday, 2024-10-04, 12:00</p>
+                <p>
+                In model-based paradigms for combinatorial optimization, such as mixed-integer programming (MIP) and constraint programming (CP), a problem is formulated as a mathematical model and then solved by a general-purpose solver.
+                Due to its flexibility and ease of use, model-based paradigms are widely used to solve NP-hard optimization problems.
+                While dynamic programming (DP) has been used for various combinatorial optimization problems, unlike model-based paradigms, existing work typically implemented problem-specific DP algorithms.
+                We propose domain-independent dynamic programming (DIDP), a novel model-based paradigm for combinatorial optimization based on DP.
+                In empirical evaluation, DIDP outperforms MIP and CP in multiple problem classes, such as the traveling salesperson problem with time windows (TSPTW) and the simple assembly line balancing problem (SALBP-1).
+                In this talk, I will introduce the modeling formalism and general-purpose solvers for DIDP and show their empirical performance compared with commercial MIP and CP solvers.
+                I will also mention ongoing research projects, including large-scale parallelization of DIDP solvers.
+                <br/>
+                This is joint work with Prof. J. Christopher Beck at University of Toronto and Yuji Shinano at Zuse Institute Berlin.
+                </p>
+
+                <h4>Eran Rosenbluth: Expressivity of Message-Passing Graph Neural Networks</h4>
+                <p>Friday, 2024-09-27, 12:00</p>
+                <p>
+                Message-Passing Graph Neural Networks (MP-GNNs) are a class parameterized algorithms that operate on graphs, widely used in machine learning on graphs. As such, characterizing their expressivity is of great importance. The talk will be an overview on the subject: I will describe the general class of MP-GNNs and various common sub-classes, I will define non-uniform and uniform expressivity, and I will explain several uniform-expressivity results concerning main sub-classes of MP-GNNs.
+                </p>
+
+                <h4>Lucas Picasarri-Arrieta (NII): Colouring Digraphs with Bounded Maximum Degree</h4>
+                <p>Friday, 2024-09-13, 12:00</p>
+                <p>
+                Erdős and Neumann-Lara introduced a notion of colouring for digraphs in the late 1970s, namely dicolouring, and its associated digraph parameter: the dichromatic number.These two notions generalise the ones of graph colouring and chromatic number, and it appears in the last decades that many classical results on graph colouring have directed counterparts using them.In this talk, we will provide a bird's-eye view of such results, with a specific focus on graphs and digraphs with bounded maximum degree.
+                </p>
+
+                <h4>Marcelo Garlet Milani (NII): Cycles of Well-Linked Sets and an Elementary Bound for the Directed Grid Theorem</h4>
+                <p>Friday, 2024-09-06</p>
+                <p>
+                In 2015, Kawarabayashi and Kreutzer proved the directed grid theorem.
+                The theorem states the existence of a function f such that every digraph of directed tree-width f(k) contains a cylindrical grid of order k as a butterfly minor, but the given function grows non-elementarily with the size of the grid minor.
+                <br/>
+                We present an alternative proof of the directed grid theorem, first proven by Kawarabayashi and Kreutzer in 2015, which is conceptually much simpler, more modular in its composition and also improves the upper bound for the function f to a power tower of height 22.
+                <br/>
+                Our proof is inspired by the breakthrough result of Chekuri and Chuzhoy, who proved a polynomial bound for the excluded grid theorem for undirected graphs.
+                We translate a key concept of their proof to directed graphs by introducing cycles of well-linked sets (CWS), and show that any digraph of high directed tree-width contains a large CWS, which in turn contains a large cylindrical grid.
+                <br/>
+                This is joint work with Meike Hatzel, Stephan Kreutzer and Irene Muzi.
+                </p>
+
+                <h4>Mikito Nanashima: One-Way Functions and Zero Knowledge</h4>
+                <p>Friday, 2024-08-30, 12:00</p>
+                <p>
+                The fundamental theorem of Goldreich, Micali, and Wigderson (J. ACM 1991) shows that the existence of a one-way function is sufficient for constructing computational zero knowledge (CZK) proofs for all languages in NP. In the talk, I will present our recent work that proves its converse, thereby establishing characterizations of one-way functions based on the worst-case complexities of zero knowledge.The talk will be based on the joint work with Shuichi Hirahara, presented in STOC24.
+                </p>
+
+                <h4>Kohei Kobayashi (NII): Analytical evaluation for the effect of stochastic control errors on
+quantum algorithm</h4>
+                <p>Friday, 2024-07-26, 12:00</p>
+                <p>
+                The scheme of quantum algorithms is described by quantum dynamics.
+                However, it is difficult to realize the desired dynamics without any control errors in realistic situations
+                Typically, stochastic control errors, which occur on the control parameters at each time stochastically, is one of the crucial obstacles.
+                Thus, it is an important task to evaluate the effect of stochastic errors on quantum dynamics.
+                In the presentation, we investigate the effect of stochastic control errors on quantum dynamics for a general quantum algorithm.
+                In particular, we give a condition for obtaining the target state under the errors as an inequality for the computational time, strength of errors, and the number of trials.
+                </p>
+
+                <h4>Sarah Houdaigoui (NII): Bounding the size of the excluded minors for a surface</h4>
+                <p>Friday, 2024-07-19, 12:00</p>
+                <p>
+                Using the Graph Minor Theorem, by Robertson and Seymour, one can easily prove that there are only a finite number of excluded minors for a given surface. This automatically implies that, given a surface, the size of these excluded minors is bounded. However, no explicit bound could be derived from the Graph Minor Theorem. In an unpublished paper, Seymour proved in 1993 that an excluded minor for a given surface S has its size bounded in a double exponential of the genus of S. My main focus for my Ph.D. has been to prove that this bound can be made polynomial in the genus of the surface. It is still a work in progress, but we are quite confident that our current approach will result in a complete proof.
+                <br/>
+                Joint work with Ken-ichi Kawarabayashi
+                </p>
+
+                <h4>Marcelo Garlet Milani (NII): Directed Ear Anonymity</h4>
+                <p>Friday, 2024-07-12, 12:00</p>
+                <p>
+                We define and study a new structural parameter for directed graphs, which we call ear anonymity.
+                Our parameter aims to generalize the useful properties of funnels to larger digraph classes.
+                In particular, funnels are exactly the acyclic digraphs with ear anonymity one.
+                We prove that computing the ear anonymity of a digraph is NP-hard and that it can be solved in O(m(n + m))-time on acyclic digraphs (where n is the number of vertices and m is the number of arcs in the input digraph).
+                It remains open where exactly in the polynomial hierarchy the problem of computing ear anonymity lies, however for a related problem we manage to show Σᵖ₂-completeness.
+                </p>
+
 
             </div>
         </div>
