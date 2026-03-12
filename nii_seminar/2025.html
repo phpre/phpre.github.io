@@ -254,6 +254,72 @@ This is joint work with Ken-ichi Kawarabayashi, Nicola Lorenz and Jacob Stegeman
             </ul>
             The talk is based on the paper appeared in CRYPTO 2021.
             </p>
+
+            <h4>Simon Döring: Can You Link Up With Treewidth?</h4>
+            <p>Friday, 2025-04-11, 12:00</p>
+            <p>
+            A central result by Marx [ToC '10] constructs k-vertex graphs H of maximum degree 3 such that n^o(k/log k) time algorithms for detecting colorful H-subgraphs would refute the Exponential-Time Hypothesis (ETH).
+            This result is widely used to obtain almost-tight conditional lower bounds for parameterized problems under ETH
+            <br/>
+            In this talk, we present a new approach for a self-contained proof of this result that further simplifies a recent work by Karthik et al. [SOSA 2024].
+            In our proof, we introduce a novel graph parameter of independent interest, the linkage capacity γ(H), and show that detecting colorful H-subgraphs in time n^o(γ(H)) refutes ETH.
+            Then, we use a simple construction of communication networks credited to Beneš to obtain k-vertex graphs of maximum degree 3 and linkage capacity Ω(k/log k), avoiding arguments involving expander graphs, which were required in previous papers.
+            We also show that every graph H of treewidth t has linkage capacity Ω(t/log t), thus recovering a stronger result shown by Marx [ToC '10] with a simplified proof.
+            Additionally, we obtain new tight lower bounds on the complexity of subgraph detection for certain types of patterns by analyzing their linkage capacity, meaning that we get that almost all k-vertex graphs of polynomial average degree Ω(k^β) for β > 0 have linkage capacity Θ(k), which implies tight lower bounds for finding such patterns H.
+            As an application of these results, we also obtain tight lower bounds for counting small induced subgraphs having a fixed property Φ, improving bounds from, e.g., [Roth, Schmitt, Wellnitz, FOCS 2020].
+            </p>
+
+            <h4>Panagiotis "Panos" Charalampopoulos: An Almost Optimal Edit Distance Oracle</h4>
+            <p>Friday, 2025-03-12, 12:00</p>
+            <p>
+            We consider the problem of preprocessing two strings S and T, of lengths m and n, respectively, in order to be able to efficiently answer the following queries: Given positions i, j in S and positions a, b in T, return the optimal alignment score of S[i..j] and T[a..b]. Let N = mn. We present an oracle with preprocessing time N^{1+o(1)} and space N^{1+o(1)} that answers queries in log^{2+o(1)} N time. In other words, we show that we can efficiently query for the alignment score of every pair of substrings after preprocessing the input for almost the same time it takes to compute just the alignment of S and T. Our oracle uses ideas from our distance oracle for planar graphs [STOC 2019] and exploits the special structure of the alignment graph. Conditioned on popular hardness conjectures, this result is optimal up to subpolynomial factors. Our results apply to both edit distance and longest common subsequence (LCS). The best previously known oracle with construction time and size O(N) has slow Ω(√ N) query time [Sakai, TCS 2019], and the one with size N^{1+o(1)} and query time log{2+o(1)} N (using a planar graph distance oracle) has slow Ω(N^{3/2}) construction time [Long & Pettie, SODA 2021]. We improve both approaches by roughly a √ N factor.
+            <br/>
+            Joint work with Paweł Gawrychowski, Shay Mozes, and Oren Weimann.
+            </p>
+
+            <h4>Ioana-Oriana Bercea: Locally Uniform Hashing</h4>
+            <p>Friday, 2025-03-21, 12:00</p>
+            <p>
+            Hashing is a commonly used technique for getting improved algorithms. Most analyses, however, assume access to fully-random hash functions, which is unrealistic in terms of the resources available to the algorithm. A fundamental line of work has thus been to design realistic hash functions (with small space and fast evaluation time) that make the algorithm perform almost as if it used fully-random hash functions. In this talk, we will review one such hash function, called a tornado tabulation hash function, that provides state-of-the-art randomness guarantees for several fundamental algorithms. In particular, we will define and discuss one key property that it exhibits, that of local uniformity.
+            <br/>
+            This is joint work with Lorenzo Beretta, Jonas Klausen, Jakob Bæk Tejs Houen, and Mikkel Thorup, appeared in FOCS 2023.
+            </p>
+
+            <h4>Philip Wellnitz (NII): Tight Complexity Bounds for Counting Generalized Dominating Sets in Bounded-Treewidth Graphs</h4>
+            <p>Friday, 2025-03-07, 12:00</p>
+            <p>
+            We investigate how efficiently a well-studied family of domination-type problems can be solved on bounded treewidth graphs. For sets 𝜎, 𝜌 of non-negative integers, a (𝜎, 𝜌)-set of a graph 𝐺 is a set 𝑆 of vertices such that |𝑁(𝑢) ∩ 𝑆| ∈ 𝜎 for every 𝑢 ∈ 𝑆, and |𝑁(𝑣) ∩ 𝑆| ∈ 𝜌 for every 𝑣 ∉ 𝑆. The problem of finding a (𝜎, 𝜌)-set (of a certain size) unifies standard problems such as Independent Set, Dominating Set, Independent Dominating Set, and many others.
+            <br/>
+            For all pairs of finite or cofinite sets (𝜎, 𝜌), we determine (under standard complexity assumptions) the best possible value 𝑐_{𝜎,𝜌} such that there is an algorithm that counts (𝜎, 𝜌)-sets in time 𝑐_{𝜎,𝜌}^tw · 𝑛^{𝑂(1)} (if a tree decomposition of width tw is given in the input).
+            For example, for the Exact Independent Dominating Set problem (also known as Perfect Code) corresponding to 𝜎 = {0} and 𝜌 = {1}, we improve the 3^tw · 𝑛^{𝑂(1)} algorithm of van Rooij to 2^tw · 𝑛^{𝑂(1)}.
+            <br/>
+            For finite sets 𝜎 and 𝜌, our lower bounds also extend to the decision version, and hence, our algorithms are optimal in this setting as well. In contrast, for many cofinite sets, we show that further significant improvements for the decision and optimization versions are possible using the technique of representative sets.
+            <br/>
+            Based on joint work with Jacob Focke, Dániel Marx, Fionn Mc Inerney, Daniel Neuen, Govind S. Sankar, and Philipp Schepper (SODA 23, TOCT 25) and Jakob Greilhuber and Philipp Schepper (STACS 25).
+            </p>
+
+            <h4>Kaito Fujii (NII): Power of mediators in Bayesian games with submodular social welfare</h4>
+            <p>Friday, 2025-02-07, 12:00</p>
+            <p>
+            In this talk, we investigate the role of mediators in Bayesian games, focusing on their impact on social welfare through the price of anarchy and price of stability. Mediators guide players toward various equilibria using communication protocols, leading to concepts known as Bayes (coarse) correlated equilibria. We analyze these equilibria in the context of Bayesian games with submodular social welfare, extending frameworks like valid utility games and basic utility games, which are used in problems like facility location and resource allocation.
+            </p>
+
+            <h4>Zeyong Li: Improved Lower Bounds for 3-Query Matching Vector Codes</h4>
+            <p>Friday, 2025-01-24, 12:00</p>
+            <p>
+            We present a new lower bound for 3-query locally decodable codes constructed from matching vector families. Locally decodable codes are error correcting codes where each bit of the message can be decoded from reading only constant many bits of the corrupted codeword. In this talk, we will focus on the entropy-based argument behind the new lower bound.
+            <br/>
+            This is joint work with Divesh Aggarwal, Pranjal Dutta, Maciej Obremski and Sidhant Saraogi, appearing in ITCS 2025.
+            </p>
+
+            <h4>Bastian Schnitzer: Risk Bounds for Statistical Learning</h4>
+            <p>Friday, 2025-01-10, 12:00</p>
+            <p>
+            We present an overview of the non-asymptotic risk bounds developed by Massart and Nédélec [Ann. Statist. 2007] for empirical risk minimization in classification and regression.
+            Building on margin-based analyses introduced by Tsybakov [Ann. Statist. 2004] and refined concentration inequalities pioneered by Bousquet [Math. Acad. Sci. 2002] and Talagrand [Invent. Math. 1996], their results yield explicit upper bounds on the excess risk.
+            While these theoretical advances and proofs come from the original authors, my own contribution is to translate and contextualize their findings—focusing on the main definitions (e.g., Bayes classifier, regression function), highlighting their minimax implications, and tailoring these ideas for a concise seminar presentation.
+            I do not delve into all the detailed proofs found in the original paper but instead provide a clear and accessible pathway to understanding the core theorems.
+            </p>
             </div>
         </div>
     </body>
