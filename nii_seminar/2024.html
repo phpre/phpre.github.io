@@ -180,11 +180,47 @@ quantum algorithm</h4>
                 </p>
 
                 <h4>Zihan Zhang (NII): Sampling Proper Colorings on Line Graphs Using (1+o(1))Δ Colors</h4>
-                <p>Friday, 2024-06-14</p>
+                <p>Friday, 2024-06-14, 12:00</p>
                 <p>
                 It has long been conjectured that a simple family of random walks, known as Glauber dynamics, on the proper q-colorings of Δ-degree graphs mix in polynomial time provided q ≥ Δ + 2. We proved this conjecture asymptotically for the special case of line graphs, by developing and utilizing the so-called matrix trickle-down theorems.
                 <br/>
                 This talk is based on joint work with Yulin Wang and Chihao Zhang.
+                </p>
+
+                <h4>James Davies: Boxes and Chromatic Number</h4>
+                <p>Friday, 2024-06-07, 12:00</p>
+                <p>
+                In 1965, Burling constructed triangle-free intersection graphs of axis-aligned boxes in R^3 with arbitrary large chromatic number. With an entirely different construction, we further construct box intersection graphs with arbitrary large girth and chromatic number.
+                </p>
+
+                <h4>Dario Cavallaro: Edge-disjoint Paths in Eulerian Digraphs</h4>
+                <p>Friday, 2024-05-31, 12:00</p>
+                <p>
+                Disjoint paths problems are among the most prominent problems in combinatorial optimization. The edge- as well as vertex-disjoint paths problem, are NP-complete on directed and undirected graphs. But on undirected graphs, Robertson and Seymour (Graph Minors XIII) developed an algorithm for the vertex- and the edge-disjoint paths problem that runs in cubic time for every fixed number p of terminal pairs, i.e., they proved that the problem is fixed-parameter tractable on undirected graphs.
+                <br/>
+                On directed graphs, Fortune, Hopcroft, and Wyllie proved that both problems are NP-complete already for p=2 terminal pairs.
+                <br/>
+                In this paper, we study the edge-disjoint paths problem (EDPP) on Eulerian digraphs, a problem that has received significant attention in the literature. Marx (Marx 2004) proved that the Eulerian EDPP is NP-complete even on structurally very simple Eulerian digraphs. On the positive side, polynomial time algorithms are known only for very restricted cases, such as p≤3 or where the demand graph is a union of two stars (see e.g. Ibaraki, Poljak 1991; Frank 1988; Frank, Ibaraki, Nagamochi 1995).
+                <br/>
+                The question of which values of p the edge-disjoint paths problem can be solved in polynomial time on Eulerian digraphs has already been raised by Frank, Ibaraki, and Nagamochi (1995) almost 30 years ago. But despite considerable effort, the complexity of the problem is still wide open and is considered to be the main open problem in this area (see Chapter 4 of Bang-Jensen, Gutin 2018 for a recent survey).
+                <br/>
+                In this paper, we solve this long-open problem by showing that the Edge-Disjoint Paths Problem is fixed-parameter tractable on Eulerian digraphs in general (parameterized by the number of terminal pairs). The algorithm itself is reasonably simple but the proof of its correctness requires a deep structural analysis of Eulerian digraphs.
+                <br/>
+                Based on joint work with Ken-ichi Kawarabayashi and Stephan Kreutzer.
+                </p>
+
+                <h4>Philip Wellnitz (NII): On the Communication Complexity of Approximate Pattern Matching</h4>
+                <p>Friday, 2024-05-17, 12:00</p>
+                <p>
+                The decades-old Pattern Matching with Edits (PMwE) problem, given a length-𝑛 string 𝑇 (the text), a length-𝑚 string 𝑃 (the pattern), and a positive integer 𝑘 (the threshold), asks to list all substrings of 𝑇 that are at edit distance at most 𝑘 from 𝑃. The one-way communication complexity of PMwE is the minimum amount of space needed to encode the answer so that it can be retrieved without access to the input strings 𝑃 and 𝑇.
+                <br/>
+                The closely related Pattern Matching with Mismatches problem (defined in terms of Hamming distance instead of the edit distance) is already well understood from the communication complexity perspective: As shown by Clifford, Kociumaka, and Porat in 2019, Ω(𝑛/𝑚 · 𝑘 log(𝑚/𝑘)) bits are necessary and 𝑂(𝑛/𝑚 · 𝑘 log(𝑚|Σ|/𝑘)) bits are sufficient to not only retrieve the occurrences of 𝑃 in 𝑇 with at most 𝑘 mismatches but also the substitutions needed to make each occurrence exact.
+                <br/>
+                Despite recent improvements in the running time (Charalampopoulos, Kociumaka, and Wellnitz, 2020, 2022), the communication complexity of PMwE remained under-explored, with an Ω(𝑛/𝑚 · 𝑘 log(𝑚/𝑘)) lower bound and an 𝑂(𝑛/𝑚 · 𝑘^3 log 𝑚) upper bound. In this work, we prove an upper bound of 𝑂(𝑛/𝑚 · 𝑘 log 𝑚 log(𝑚|Σ|)) bits, thus establishing the optimal communication complexity up to logarithmic factors.
+                <br/>
+                We leverage our new result on the communication complexity to obtain quantum algorithms for PMwE with an optimal query complexity of ^𝑂(𝑛/𝑚 · \sqrt{𝑘𝑚}) and a quantum time of ^𝑂(𝑛/𝑚 · (\sqrt{𝑘}𝑚 + 𝑘^3.5)) (where ^𝑂 hides sub-polynomial factors).
+                <br/>
+                Based on joint work with Tomasz Kociumaka and Jakob Nogler.
                 </p>
 
 
