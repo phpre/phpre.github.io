@@ -25,9 +25,31 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
                 <h3>Next Talk: Friday, July 10, 2026; 12:00, room 1512</h3>
 
                 <h4>
+                    <a href="https://users.cs.duke.edu/~br148/">Benjamin Rossman
+                        (Duke)</a>: Size–Depth Tradeoff for the Planted Clique Problem
                 </h4>
 
                 <p>
+                    The planted clique problem is the task of distinguishing a uniform
+                    random graph G ~ G(n,1/2) from a graph obtained by planting a clique
+                    on k random vertices.  We study the bounded-depth monotone circuit
+                    complexity of this problem in the near-threshold regime k = 2 log_2 n,
+                    slightly above the typical maximum clique size of G(n,1/2).
+
+                    <br/>
+
+                    This problem has depth-2 monotone circuits of size O(n^k), obtained by checking all
+                    possible k-cliques.  It also has monotone circuits of depth O(k) and size n^{k/4 + O(1)}.
+                    Interpolating between these bounds, we prove matching upper and lower bounds showing that
+                    the minimum size of depth-2d monotone circuits for this problem is n^{k/beta(d) ± o(k)}
+                    where
+                    beta(d) := 4 cos^2(pi/(2^d + 1)) = 4 - Theta(4^{-d}).
+
+                    <br/>
+
+                    This talk will give an overview of this result and discuss a general
+                    method of establishing tight size–depth tradeoffs for a broad family
+                    of average-case subgraph isomorphism problems.
                 </p>
 
                 <hr class="clearpara"/>
