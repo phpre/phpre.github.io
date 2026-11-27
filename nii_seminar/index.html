@@ -23,12 +23,70 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
 
                 <hr/>
 
-                <h3>Next Talk: Friday, November 20, 2026; 12:00, room 1512</h3>
+                <h3>Next Talk: Monday, November 30, 2026; 12:00, room TBA</h3>
 
                 <h4>
-                    Chunyang Wang:
+                    Panagiotis Charalampopoulos (King's College London):
+                    Dynamic Approximate Text Indexing
+                </h4>
+
+                <p>
+                    In approximate text indexing, given a text and an integer k > 0, the
+                    goal is to construct a data structure that can efficiently find all
+                    k-mismatch or k-edit occurrences of a query pattern in the text. The
+                    state-of-the-art approximate text indexes are based on the k-errata
+                    tree that was introduced in a seminal work of Cole, Gottlieb, and
+                    Lewenstein [STOC 2004]. Unfortunately, no previously known approximate
+                    text index achieves query time comparable to that of k-errata trees
+                    and efficiently supports text updates.
+
+                    <br/>
+
+                    Here, we present a dynamic approximate text index that supports edit operations in the
+                    text in Õ(cᵏ logᵏ n / k!) time¹ and approximate pattern matching queries in Õ(m + cᵏ logᵏ
+                    n / k! + cᵏ ⋅ output) time, where n ≥ 2ᵏ is an upper bound on the length of the text, m is
+                    the length of the pattern, and c is a constant. Significantly improving the update or
+                    query time of our index would imply a breakthrough in static approximate indexing. For
+                    constant k, our index is optimal up to polylogarithmic factors; near-optimal dynamic exact
+                    text indexes have been known since the 1990s [Sahinalp, Vishkin; FOCS 1996]. Our main
+                    technical contribution is a novel anchoring framework based on a balanced partitioning of
+                    the pattern according to its locally consistent parsing [Gawrychowski et al.; SODA 2018].
+
+                    <br/>
+
+                    A straightforward application of our index improves the best known
+                    update time for dynamic pattern matching with at most k ≥ 1 wildcards
+                    in total across the pattern and text from Õ(kn^(1-1/(k+1))) [Naeini,
+                    Mobed, Seddighin, Seddighin; STACS 2026] to Õ(cᵏ logᵏ n / k!), which
+                    is nᵒ⁽¹⁾ for k = o(log n).
+
+                    <br/>
+
+                    Joint work with Jonas Ellert and Jakub Radoszewski.
+                </p>
+
+
+                <hr class="clearpara"/>
+                <h3>Upcoming Talks</h3>
+                Talk contributions are always welcome! Please do not hesitate to contact Philip (wellnitz_at_nii.ac.jp) directly
+                if you want to give a talk.
+
+                <ul>
+                    <li> Friday, December 11, 12:00 (reserved)
+                    <li> Friday, December 18, 12:00 (reserved)
+                    <li> Friday, January 8, 12:00
+                </ul>
+
+                <hr class="clearpara"/>
+                <h3>Past Talks (2026)</h3>
+                <a href="2025.html">2025</a>
+                <a href="2024.html">2024</a>
+
+                <h4>
+                   15. Chunyang Wang:
                     Zero-freeness for Random Regular Graphs up to the Replica Symmetry Breaking Threshold
                 </h4>
+                <p>Friday, November 20, 2026; 12:00</->
 
                 <p>
                 We study antiferromagnetic spin systems on random regular graphs through
@@ -66,24 +124,6 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
                 <br/>
                 Based on joint work with Zejia Chen and Xinyuan Zhang, both from Georgia Institute of Technology.
                 </p>
-
-
-                <hr class="clearpara"/>
-                <h3>Upcoming Talks</h3>
-                Talk contributions are always welcome! Please do not hesitate to contact Philip (wellnitz_at_nii.ac.jp) directly
-                if you want to give a talk.
-
-                <ul>
-                    <li> Friday, November 27, 12:00 (reserved)
-                    <li> Friday, December 11, 12:00 (reserved)
-                    <li> Friday, December 18, 12:00
-                    <li> Friday, January 8, 12:00
-                </ul>
-
-                <hr class="clearpara"/>
-                <h3>Past Talks (2026)</h3>
-                <a href="2025.html">2025</a>
-                <a href="2024.html">2024</a>
 
 
                 <h4>
